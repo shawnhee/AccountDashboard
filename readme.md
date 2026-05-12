@@ -1,99 +1,39 @@
-# Account Dashboard - Lab Practice
+# Account Dashboard
 
-A Java-based application that visualizes your monthly spending using mySQL and jfreechart.
-Developed for my Component-Based Software Engineering (CBSE) course lab activity.
+Java desktop application for retrieving and visualizing expense data from MySQL.
 
-## Table of Contents
+## Requirements
 
-<hr>
+- JDK 17 or higher
+- Maven
+- XAMPP or any related MySQL server
 
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Deployment](#deployment)
-- [Usage](#usage)
-- [Built Using](#built_using)
-- [TODO](../TODO.md)
-- [Contributing](../CONTRIBUTING.md)
-- [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
+## Dependencies
 
-## 🧐 About <a name = "about"></a>
+This project uses Maven to handle dependencies as below (Can be found in pom.xml):
 
-Write about 1-2 paragraphs describing the purpose of your project.
+- MySQL Connector/J (9.2.0): `com.mysql:mysql-connector-j` - Connects application with database
+- JFreeChart (1.5.6): `org.jfree:jfreechart` - Visualizes spending in graphical charts
 
-## 🏁 Getting Started <a name = "getting_started"></a>
+Install dependencies with:
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them.
-
-```
-Give examples
+```bash
+mvn clean install
 ```
 
-### Installing
+## Database Setup
 
-A step by step series of examples that tell you how to get a development env running.
+1. Run MySQL locally on `localhost:3306`.
+2. Import `accountdashboard.sql` into the database manager.
+3. Ensure the credentials in `src/main/java/com/account/SQLConnection.java` match your database setup.
 
-Say what the step will be
+## Run
 
-```
-Give the example
-```
+Start the database server, then run the main class from your IDE.
 
-And repeat
+The application should connect successfully and display the expense dashboard.
 
-```
-until finished
-```
+## Notes
 
-End with an example of getting some data out of the system or using it for a little demo.
-
-## 🔧 Running the tests <a name = "tests"></a>
-
-Explain how to run the automated tests for this system.
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## 🎈 Usage <a name="usage"></a>
-
-Add notes about how to use the system.
-
-## 🚀 Deployment <a name = "deployment"></a>
-
-Add additional notes about how to deploy this on a live system.
-
-## ⛏️ Built Using <a name = "built_using"></a>
-
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
-
-## ✍️ Authors <a name = "authors"></a>
-
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
-
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
-
-## 🎉 Acknowledgements <a name = "acknowledgement"></a>
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
+- Main source code is in `src/main/java`.
+- Database schema and sample data are in `accountdashboard.sql`.
