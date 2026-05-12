@@ -1,0 +1,30 @@
+# --- DATABASE & SECRETS ---
+.env
+*.config
+*.credentials
+
+# --- JAVA BUILD ARTIFACTS ---
+# We never push compiled code, only source code
+*.class
+*.jar
+*.war
+*.ear
+target/
+bin/
+build/
+
+# --- IDE SETTINGS ---
+# These are specific to your computer/monitor/theme
+.vscode/
+.idea/
+*.iml
+.settings/
+.project/
+.classpath/
+nbproject/
+nbbuild/
+nbdist/
+
+# --- SYSTEM JUNK ---
+.DS_Store
+Thumbs.db
