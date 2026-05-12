@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html","k":"18"},{"p":"com.account","l":"ExpensesChart"},{"p":"com.ex.calculate","l":"ExpensesCompute"},{"p":"com.account","l":"MainWindow"},{"p":"com.account","l":"SQLConnection"}];updateSearchResults();
